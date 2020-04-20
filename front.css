@@ -1,0 +1,64 @@
+html {
+  cursor: pointer; /*turns the arrow pointer into a finger pointer*/
+  font-family: sans-serif;
+  text-shadow: 2px 2px lightgray; /*provides a shadow to all the text on the page*/
+}
+.movie,
+.food,
+.choices {
+  display: inline-block; /*divs are by default box elements..meaning they stack upon eachother. doing this, will place the boxes next
+    to eachother.*/
+  height: 150px; /*this along with the following css property provides the box like apperance for the different classes*/
+  width: 150px;
+  margin: 10px;
+  border: 3px black solid;
+  background-color: white;
+  box-shadow: 10px 10px grey; /*this provides the shadow element for the boxes as line 4 does for the text*/
+}
+
+.foodChoices {
+  margin-left: 15%;
+  margin-bottom: 30px;
+}
+
+.movieGenre {
+  margin-left: 5%;
+  margin-bottom: 10px;
+}
+
+.selections {
+  margin-left: 35%;
+  margin-bottom: 10px;
+}
+
+.button {
+  background-color: lightgray;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none; /*i dont know what effect this and line 41 has the apperance of the page*/
+  display: inline-block;
+  font-size: 24px; /*This will determine the size of the writing inside the button*/
+  border-radius: 12px; /*This will round the corner..so the button will not be squared*/
+}
+
+.button:hover { /*When you hover over the button, this will change the appearence of the button and lets the user know they are hovering 
+  over the button..once the user hovers over the button, the color of the button will change to blue and the writing will be white*/
+  background-color: blue;
+  color: white;
+}
+
+header img{
+    margin-left: 10%;  /*take note that i am using percentage here and not pixel or rem*/
+    width:80%; /*percentage and not px or rem*/
+    
+    
+}
+img { /*using this class without specifying anything, will select all classes of images regardless of where they are on the page. 
+  This will make the images a square, having equal height and width*/
+  height: 150px;
+  width: 150px;
+  box-shadow: 10px 10px grey;
+}
+
